@@ -52,7 +52,7 @@ startStopBtn.addEventListener('click', () => {
 resetBtn.addEventListener('click', () => {
   stopTimer();
   if (currentInterval === 'pomodoro') {
-    timeLeft = 25 * 60;
+    timeLeft = 50 * 60;
   } else if (currentInterval === 'short-break') {
     timeLeft = 5 * 60;
   } else {
@@ -104,7 +104,7 @@ function startTimer() {
         currentInterval = 'long-break';
         startTimer();
       } else {
-        timeLeft = 25 * 60;
+        timeLeft = 50 * 60;
         currentInterval = 'pomodoro';
       }
     }
